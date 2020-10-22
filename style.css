@@ -1,0 +1,71 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+body > * {
+  flex: 1;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "FiraSans";
+  src: url("fira-sans/FiraSans-Bold.otf");
+}
+
+section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  transition: transform 0.5s ease-out;
+
+  cursor: pointer;
+  position: relative;
+}
+
+section:hover {
+  transform: scale(1.15);
+}
+
+#cv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-image: url('./CV\ -\ Etienne\ Robert\ -\ May\ 27\,\ 2020-1.jpg');
+  opacity: 0.5;
+
+  transition: opacity 0.5s ease-out;
+}
+
+#cv:hover::before {
+  opacity: 0.75;
+}
+
+@media only screen and (orientation:portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+
+h1 {
+  position: relative;
+  font-size: 6rem;
+  font-family: "FiraSans";
+}
