@@ -49,6 +49,7 @@ section:hover {
   right: 0;
   bottom: 0;
   background-size: cover;
+  background-position-x: center;
   opacity: 0.5;
 
   transition: opacity 0.5s ease-out;
