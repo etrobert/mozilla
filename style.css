@@ -65,7 +65,8 @@ section:hover {
 }
 
 #letter::before {
-  background-image: url('./mozzila_etienne.png');
+  background-position-y: center;
+  background-image: url('./Cover\ Letter\ Mozilla\ -\ Etienne\ Robert\ -\ Preview.pdf.png');
 }
 
 @media only screen and (orientation:portrait) {
